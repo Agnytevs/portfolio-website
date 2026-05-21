@@ -24,14 +24,17 @@ img {
     max-width: 50%;
 }
 .wrapper {
-    background: linear-gradient(180deg,rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
-    width:100%;
+  width: 100%;
+  max-width: 1200px; /* Максимальная ширина для больших экранов */
+  margin: 0 auto; /* Центрирование */
+  padding: 0 15px; /* Отступы по бокам */
 }
 
 .container {
-    width: 1400px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
 }
+
 
 header {
     padding: 50px 0
