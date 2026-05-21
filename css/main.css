@@ -12,13 +12,6 @@ body {
     font-size: 16px;
 }
 
-h1 {
-  font-size: clamp(24px, 4vw, 40px); /* Минимум 24 px, оптимально 4 vw, максимум 40 px */
-}
-p {
-  font-size: clamp(14px, 2vw, 18px);
-}
-
 span {
     color: rgb(41, 219, 255)
 }
@@ -28,88 +21,17 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-img {
     max-width: 50%;
 }
-
 .wrapper {
-  width: 100%;
-  max-width: 1200px; /* Максимальная ширина для больших экранов */
-  margin: 0 auto; /* Центрирование */
-  padding: 0 15px; /* Отступы по бокам */
+    background: linear-gradient(180deg,rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
+    width:100%;
 }
 
 .container {
-  width: 100%;
-  padding: 0 20px;
+    width: 1400px;
+    margin: 0 auto;
 }
-
-@media (max-width: 1024px) {
-  .hero--info h1 {
-    font-size: 28px;
-  }
-  nav ul {
-    flex-direction: column; /* Вертикальное меню */
-  }
-}
-
-.menu-toggle {
-  display: none; /* Скрыто на десктопе */
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-@media (max-width: 767px) {
-  .menu-toggle {
-    display: block; /* Показывается на мобильных */
-  }
-  .main-nav {
-    display: none; /* Изначально скрыто */
-  }
-  .main-nav.active {
-    display: block; /* Показывается при активации */
-    width: 100%;
-  }
-  nav ul {
-    flex-direction: column;
-    background: #f8f9fa;
-  }
-}
-
-@media (max-width: 767px) {
-  .logo {
-    font-size: 18px;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .hero--info {
-    text-align: center;
-  }
-  .hero--bottom h1 {
-    display: none; /* Скрыть декоративные элементы */
-  }
-}
-
-@media (max-width: 480px) {
-  .hero--info h1 {
-    font-size: 22px;
-  }
-  button.btn {
-    width: 100%;
-    padding: 12px;
-  }
-}
-
 
 header {
     padding: 50px 0
@@ -175,14 +97,14 @@ header nav ul li.btn a:hover {
 }
 
 .hero {
-  display: flex;
-  flex-wrap: wrap; /* Перенос на новую строку */
-  gap: 30px; /* Расстояние между элементами */
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
 }
 
-.hero--info, .hero--image {
-  flex: 1; /* Равное распределение пространства */
-  min-width: 300px; /* Минимальная ширина */
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
 }
 
 .hero--info h2 {
