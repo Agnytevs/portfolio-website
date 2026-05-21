@@ -263,7 +263,7 @@ header nav ul li.btn a:hover {
 }
 
 /* Маленькие мобильные устройства (до 480px) */
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 480px) {
     .container {
         width: 100%;
         padding: 0 10px;
@@ -283,3 +283,81 @@ header nav ul li.btn a:hover {
         font-size: 16px;
     }
 }
+
+/* Очень маленькие экраны (до 384px) */
+@media screen and (max-width: 384px) {
+    body {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    header .logo {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    header nav ul {
+        gap: 10px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .hero--info h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .hero--info h2 {
+        font-size: 16px;
+    }
+
+    .hero--info p {
+        margin: 8px 0;
+        font-size: 13px;
+    }
+
+    .hero--info .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hidden-text {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .trending h3 {
+        font-size: 18px;
+    }
+
+    .trending .see-all {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .hero img {
+        max-width: 90%;
+        margin: 15px auto;
+    }
+}
+
