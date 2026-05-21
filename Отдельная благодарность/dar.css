@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/share?selection.family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
     margin: 0;
@@ -6,14 +6,14 @@
 }
 
 body {
-    font-family: 'Great Vibes', cursive;
+    font-family: cursive;
     font-weight: 400;
     color: #fff;
     font-size: 16px;
 }
 
 span {
-    color: rgb(41, 219, 255)
+    color: rgb(41, 219, 255);
 }
 
 a {
@@ -35,17 +35,19 @@ img.me {
 }
 
 .wrapper {
-    background: linear-gradient(180deg,rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
-    width:100%;
+    background: linear-gradient(180deg, rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
+    width: 100%;
 }
 
 .container {
     width: 1400px;
     margin: 0 auto;
+    min-width: 360px;
+    max-width: 1600px;
 }
 
 header {
-    padding: 50px 0
+    padding: 50px 0;
 }
 
 header .logo {
@@ -69,9 +71,6 @@ header nav ul {
 
 header nav ul li a {
     display: inline-block;
-}
-
-header nav ul li a {
     color: #fff;
 }
 
@@ -79,7 +78,6 @@ header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid rgb(0, 157, 255);
     border-radius: 10px;
     transition: all 500ms ease;
-   
 }
 
 header nav ul li.active::after {
@@ -121,12 +119,12 @@ header nav ul li.btn a:hover {
 .hero--info h2 {
     color: rgb(251, 255, 0);
     font-size: 20px;
-    font-weight: 850px;
+    font-weight: 800; /* Исправлено: было 850px */
 }
 
 .hero--info h3 {
     color: rgb(252, 13, 13);
-    font-size: 40px
+    font-size: 40px;
 }
 
 .hero--info h1 {
@@ -187,13 +185,107 @@ header nav ul li.btn a:hover {
 }
 
 .hidden-text {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 1s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
 }
 
 .btn:focus + .hidden-text {
-  opacity: 1;
-  max-height: 300px; /* Достаточно для вашего текста */
+    opacity: 1;
+    max-height: 300px;
 }
+
+/* Планшеты (до 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero--info {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .hero--info h1 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        position: static;
+        max-width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* Мобильные устройства (до 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .logo {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hero--info h1 {
+        font-size: 32px;
+    }
+
+    .hero--info p {
+        margin: 10px 0;
+        line-height: 140%;
+    }
+
+    .trending h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .trending .see-all {
+        float: none;
+        display: inline-block;
+        margin: 15px auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Маленькие мобильные устройства (до 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero--info h2 {
+        font-size: 18px;
+    }
+
+    .hero--info .btn {
+        padding: 12
+
