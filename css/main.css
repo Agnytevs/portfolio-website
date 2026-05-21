@@ -263,7 +263,7 @@ header nav ul li.btn a:hover {
 }
 
 /* Маленькие мобильные устройства (до 480px) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 384px) {
     .container {
         width: 100%;
         padding: 0 10px;
