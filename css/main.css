@@ -21,8 +21,16 @@ a {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+img {
     max-width: 50%;
 }
+
 .wrapper {
   width: 100%;
   max-width: 1200px; /* Максимальная ширина для больших экранов */
@@ -33,6 +41,41 @@ img {
 .container {
   width: 100%;
   padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .hero--info h1 {
+    font-size: 28px;
+  }
+  nav ul {
+    flex-direction: column; /* Вертикальное меню */
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    font-size: 18px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero--info {
+    text-align: center;
+  }
+  .hero--bottom h1 {
+    display: none; /* Скрыть декоративные элементы */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero--info h1 {
+    font-size: 22px;
+  }
+  button.btn {
+    width: 100%;
+    padding: 12px;
+  }
 }
 
 
