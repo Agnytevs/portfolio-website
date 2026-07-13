@@ -6,6 +6,7 @@
 }
 
 body {
+    background: linear-gradient(180deg, rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
     font-family: cursive;
     font-weight: 400;
     color: #fff;
@@ -25,7 +26,6 @@ img {
 }
 
 .wrapper {
-    background: linear-gradient(180deg, rgb(119, 0, 0) 0%, rgb(0, 180, 150) 100%);
     width: 100%;
 }
 
